@@ -12,10 +12,10 @@ export default {
         "2xl": "1400px",
       },
     },
-    fontFamily: {
-      sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
-    },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+      },
       colors: {
         warning: {
           DEFAULT: "hsl(var(--warning))",
