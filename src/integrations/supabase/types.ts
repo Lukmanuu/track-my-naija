@@ -14,6 +14,39 @@ export type Database = {
   }
   public: {
     Tables: {
+      citizen_reports: {
+        Row: {
+          created_at: string
+          description: string
+          id: string
+          media_urls: string[] | null
+          project_id: string
+          project_name: string
+          status: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          description: string
+          id?: string
+          media_urls?: string[] | null
+          project_id: string
+          project_name: string
+          status?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          description?: string
+          id?: string
+          media_urls?: string[] | null
+          project_id?: string
+          project_name?: string
+          status?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           avatar_url: string | null
